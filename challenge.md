@@ -98,7 +98,7 @@ Make a subclass of `Product` named `BoxingGlove` that does the following:
 - Add a `punch` method that returns "That tickles." if the weight is below 5,
   "Hey that hurt!" if the weight is greater or equal to 5 but less than 15, and
   "OUCH!" otherwise
-  
+
 Example test run:
 
 ```python
@@ -176,7 +176,7 @@ The last lines let you test by running `python acme_report.py`. You should see
 output like:
 
 ```
-$ python acme_report.py 
+$ python acme_report.py
 ACME CORPORATION OFFICIAL INVENTORY REPORT
 Unique product names: 19
 Average price: 56.8
@@ -213,7 +213,7 @@ if __name__ == '__main__':
 
 If you run the tests you should see output like:
 ```
-$ python acme_test.py 
+$ python acme_test.py
 .
 ----------------------------------------------------------------------
 Ran 1 test in 0.000s
@@ -232,7 +232,7 @@ Complete the following:
   length 30, and `test_legal_names` which checks that the generated names for a
   default batch of products are all valid possible names to generate (adjective,
   space, noun, from the lists of possible words)
-  
+
 *Hint* - `test_legal_names` is the trickiest of these, but may not be as bad as
 you think. Check out `assertIn` from `unittest`, and remember that Python is
 pretty handy at string processing. But if you get stuck, move on and revisit.
@@ -262,9 +262,22 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+
+In my opinion one of the most important parts of code reviews is to remember
+your colleague is human. That said, for every 2 items of constructive criticism
+make sure you give a proverbial pat on the back. Let him/her/them know
+that although there are areas for improvement, there are also areas where they
+excel. Of course, you should be honest, but brutally honest is not necessary.
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
-  improve this situation?
+  improve this situation
+
+  A container, such as those we learned to use in Docker could help improve the
+  situation by providing local reproducibility. In other words, we could package
+  up everything needed to run the code in neat little container. When we send it
+  to a colleague it should work on any machine they are using. Docker makes it
+  especially easy because all of the code is one server.
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
